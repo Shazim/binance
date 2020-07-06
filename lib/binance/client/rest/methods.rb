@@ -65,7 +65,35 @@ module Binance
         # #my_trades
         { name: :my_trades, client: :signed,
           action: :get, endpoint: :my_trades },
-        # #listen_key
+
+        { name: :f_order, client: :future_signed,
+          action: :get, endpoint: :f_order },
+
+        { name: :f_open_order, client: :future_signed,
+          action: :get, endpoint: :f_open_order },
+
+        { name: :f_open_orders, client: :future_signed,
+          action: :get, endpoint: :f_open_orders },
+
+        { name: :f_all_orders, client: :future_signed,
+          action: :get, endpoint: :f_all_orders },
+
+        { name: :f_account, client: :future_signed,
+          action: :get, endpoint: :f_account },
+
+        { name: :f_balance, client: :future_signed,
+          action: :get, endpoint: :f_balance },
+
+        { name: :f_margin_history, client: :future_signed,
+          action: :get, endpoint: :f_margin_history },
+
+        { name: :f_position_risk, client: :future_signed,
+          action: :get, endpoint: :f_position_risk },
+
+        { name: :f_user_trades, client: :future_signed,
+          action: :get, endpoint: :f_user_trades },
+
+          # #listen_key
         { name: :listen_key, client: :verified,
           action: :post, endpoint: :user_data_stream },
         # #keep_alive_stream!

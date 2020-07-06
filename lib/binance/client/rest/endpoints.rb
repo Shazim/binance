@@ -24,6 +24,18 @@ module Binance
         my_trades:        'v3/myTrades',
         user_data_stream: 'v1/userDataStream',
 
+        # Future Account API Endpoints
+
+        f_order:            'v1/order',
+        f_open_order:       'v1/openOrder',
+        f_open_orders:      'v1/openOrders',
+        f_all_orders:       'v1/allOrders',
+        f_account:          'v2/account',
+        f_balance:          'v2/balance',
+        f_margin_history:   'v1/positionMargin/history',
+        f_position_risk:    'v1/positionRisk',
+        f_user_trades:      'v1/userTrades',
+
         # Withdraw API Endpoints
         withdraw:         'v3/withdraw.html',
         deposit_history:  'v3/depositHistory.html',

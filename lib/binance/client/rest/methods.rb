@@ -66,6 +66,10 @@ module Binance
         { name: :my_trades, client: :signed,
           action: :get, endpoint: :my_trades },
 
+        # sport transfer history
+        { name: :transfer_history, client: :spot,
+          action: :get, endpoint: :transfer_history },
+
         { name: :f_order, client: :future_signed,
           action: :get, endpoint: :f_order },
 

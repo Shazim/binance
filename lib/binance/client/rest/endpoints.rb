@@ -24,6 +24,9 @@ module Binance
         my_trades:        'v3/myTrades',
         user_data_stream: 'v1/userDataStream',
 
+        #Spot API Endpoints
+
+        transfer_history:   'v1/futures/transfer',
         # Future Account API Endpoints
 
         f_order:            'v1/order',
